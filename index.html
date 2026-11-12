@@ -1,37 +1,83 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница о человеке</title>
+  <title>Ангелина Храпова — веб-дизайнер</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a href="#">Храпова Ангелина</a>
-  <a href="../index.html">Назад</a>
-</header>
+  <header class="header">
+    <a href="#" class="logo">Ангелина Храпова</a>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#works">Работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
 
-<section class="profile">
-  <img src="photo/pivn.jfif" alt="Фото человека">
-  <h1>Храпова Ангелина</h1>
-  <p><strong>О себе:</strong> Привет! Меня зовут Ангелина. Я увлекаюсь йогой, чтением, программированием. Люблю спорт во всех его проявлениях!</p>
-  <p><em>"Стремись быть не лучше других, а лучше чем вчера."</em></p>
+  <main>
+    <section class="about" id="about">
+      <img class="photo" src="images/photo.jpg" alt="Ангелина Храпова">
+      <h1>Ангелина Храпова</h1>
+      <p class="role">Веб-дизайнер</p>
+      <p>Создаю сайты и лендинги: от макета в Figma до готового сайта на Tilda. Делаю адаптив под телефоны и планшеты и думаю о том, чтобы сайтом было удобно пользоваться.</p>
+    </section>
 
-  <div class="hobbies">
-    <h2>Мои увлечения</h2>
-    <ul>
-      <li>Программирование</li>
-      <li>Пешие прогулки</li>
-      <li>Йога</li>
-      <li>Вождение</li>
-    </ul>
-  </div>
-</section>
+    <section class="skills" id="skills">
+      <h2>Навыки</h2>
+      <ul class="skills-list">
+        <li>Figma — макеты, компоненты, прототипы</li>
+        <li>Tilda — сборка сайтов, Zero Block</li>
+        <li>Адаптивный дизайн</li>
+        <li>HTML и CSS</li>
+        <li>UI/UX и доступность (контраст, WCAG)</li>
+        <li>Подготовка графики для веба</li>
+      </ul>
+    </section>
 
-<footer>
-  С любовью ❤️ | 2026
-</footer>
+    <section class="works" id="works">
+      <h2>Мои работы</h2>
+      <div class="works-grid">
+        <article class="card">
+          <a href="images/work1.jpg" target="_blank">
+            <img src="images/work1.jpg" alt="Главный экран сайта цветочного магазина FLORS">
+          </a>
+          <h3>FLORS</h3>
+          <p>Сайт для цветочного магазина</p>
+        </article>
+        <article class="card">
+          <a href="images/work2.jpg" target="_blank">
+            <img src="images/work2.jpg" alt="Макет сайта магазина натуральной косметики be.sage">
+          </a>
+          <h3>be.sage</h3>
+          <p>Сайт для магазина натуральной косметики</p>
+        </article>
+        <article class="card">
+          <a href="images/work3.jpg" target="_blank">
+            <img src="images/work3.jpg" alt="Макет сайта студии пилатеса Ananda Space: десктоп и мобильная версия">
+          </a>
+          <h3>Ananda Space</h3>
+          <p>Сайт для студии пилатеса</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2>Контакты</h2>
+      <p>Открыта к новым проектам — пишите!</p>
+      <div class="buttons">
+        <a class="button" href="https://khrapova-design.ru/" target="_blank">Портфолио на Tilda</a>
+        <a class="button" href="https://kwork.ru/portfolio" target="_blank">Я на Kwork</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 Ангелина Храпова
+  </footer>
 
 </body>
 </html>
